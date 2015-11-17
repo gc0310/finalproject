@@ -87,7 +87,7 @@ require(
 
         // Called when the start button is clicked to hide the startButton and begin the game
         var start = function (){
-        	console.log("Game is starting...");
+            console.log("Game is starting...");
 
             // Hides all images and text on the start screen
             startimage.hide();
@@ -102,7 +102,7 @@ require(
             scoreText.show();
 
             
-            var difficultyLevel = prompt("Set your difficulty level!\n1 - Easy, 2 - Medium, 3 - Hard.\nGood luck!", "1");
+            var difficultyLevel = prompt("Set your difficulty level!\n\n1 - Easy, 2 - Medium, 3 - Hard.\n\nYou have 15 seconds to score as\nmany points as you can, good luck!", "1");
 
 
             // -------------------------------------------------
@@ -388,10 +388,10 @@ require(
             sushi.ypos = sushi.ypos + sushi.yrate; 
             sushi.attr({x: sushi.xpos, y: sushi.ypos});
 
-            if (sushi.xpos < 0) {sushi.xrate = -1*sushi.xrate; ballBounce.play()};
-            if (sushi.xpos > pWidth) {sushi.xrate = -1*sushi.xrate; ballBounce.play()};
-            if (sushi.ypos < 0) {sushi.yrate = -1*sushi.yrate; ballBounce.play()};
-            if (sushi.ypos > pHeight){sushi.yrate = -1*sushi.yrate; ballBounce.play()};
+            if (sushi.xpos < 0) {sushi.xrate = -1*sushi.xrate};
+            if (sushi.xpos > pWidth) {sushi.xrate = -1*sushi.xrate};
+            if (sushi.ypos < 0) {sushi.yrate = -1*sushi.yrate};
+            if (sushi.ypos > pHeight){sushi.yrate = -1*sushi.yrate};
         };
                 
 
