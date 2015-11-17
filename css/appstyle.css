@@ -1,0 +1,46 @@
+html, body
+{
+	
+	height: 100%;
+	width: 100%;
+}
+
+@font-face {
+  font-family: 'Besom';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Besom'), url('www/fonts/Besom.ttf');
+}
+
+@font-face {
+  font-family: 'GT-Cinetype-Trial-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('GT-Cinetype-Trial-Regular'), url('www/fonts/GT-Cinetype-Trial-Regular.otf');
+}
+
+body {
+    background-image: url("../images/gamebg.jpg");
+    background-repeat: repeat;
+}
+
+h3 {color: white;
+	height: 15%;
+	user-select: none;
+	text-align: center;
+}
+
+
+#mySVGCanvas {
+	border: 5px solid white;
+	border-radius: 5px;
+	width: 700px;
+	height: 500px;
+	margin: auto;
+	background: url("../images/GameStart.png");
+
+}
+
+
+
+
